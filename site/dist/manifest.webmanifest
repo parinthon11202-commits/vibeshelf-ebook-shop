@@ -1,0 +1,9 @@
+{
+  "name": "VibeShelf E-book Shop",
+  "short_name": "VibeShelf",
+  "start_url": "./#/store",
+  "display": "standalone",
+  "background_color": "#f4efe4",
+  "theme_color": "#2f5d50",
+  "icons": []
+}

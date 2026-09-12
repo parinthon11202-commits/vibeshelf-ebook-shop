@@ -1,0 +1,27 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="component_event" id="back_pressed" x="48" y="48">
+    <mutation component_type="Form" is_generic="false" instance_name="Screen1" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">Screen1</field>
+    <statement name="DO">
+      <block type="controls_if" id="if_web_can_go_back">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="component_method" id="can_go_back">
+            <mutation component_type="WebViewer" method_name="CanGoBack" is_generic="false" instance_name="WebViewer1"></mutation>
+            <field name="COMPONENT_SELECTOR">WebViewer1</field>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="go_back">
+            <mutation component_type="WebViewer" method_name="GoBack" is_generic="false" instance_name="WebViewer1"></mutation>
+            <field name="COMPONENT_SELECTOR">WebViewer1</field>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="controls_closeApplication" id="close_application"></block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="223" language-version="36"></yacodeblocks>
+</xml>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2f5d50" />
+    <meta
+      name="description"
+      content="VibeShelf ร้าน E-book สาธิตจากผลงาน Python, PyQt6 และ SQLite"
+    />
+    <title>VibeShelf — E-book จากผลงานจริง</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">ข้ามไปยังเนื้อหาหลัก</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#/store" aria-label="VibeShelf หน้าร้าน">
+          <span class="brand-mark" aria-hidden="true">V</span>
+          <span class="brand-name">Vibe<span>Shelf</span></span>
+        </a>
+
+        <button
+          class="menu-button"
+          type="button"
+          data-action="toggle-menu"
+          aria-controls="site-nav"
+          aria-expanded="false"
+        >
+          <span class="sr-only">เปิดเมนู</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="เมนูหลัก">
+          <a href="#/store" data-nav="store">หน้าร้าน</a>
+          <a href="#/track" data-nav="track">ติดตามคำสั่งซื้อ</a>
+          <a href="#/guide" data-nav="guide">วิธีใช้งาน</a>
+          <a class="nav-cart" href="#/store" aria-label="หนังสือที่เลือก">
+            <span aria-hidden="true">▣</span>
+            <span id="cart-count">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>VibeShelf</strong> · ร้าน E-book เพื่อการเรียนรู้</p>
+        <p>DEMO ONLY · ไม่มีการชำระเงินจริง</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <noscript>
+      <div class="noscript">เว็บไซต์นี้ต้องเปิด JavaScript เพื่อทดลองสั่งซื้อ E-book</div>
+    </noscript>
+    <script src="./supabase-config.js" defer></script>
+    <script src="./supabase-client.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

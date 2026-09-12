@@ -1,0 +1,17 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Dependencies and deployment state
+node_modules/
+.vercel/
+
+# Temporary working files
+tmp/
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
