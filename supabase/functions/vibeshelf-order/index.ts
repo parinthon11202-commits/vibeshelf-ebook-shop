@@ -78,7 +78,7 @@ async function sendDownloadEmail(
   const resendKey = Deno.env.get("RESEND_API_KEY");
   if (!resendKey) return "SENT_DEMO";
 
-  const from = Deno.env.get("EMAIL_FROM") || "VibeShelf <onboarding@resend.dev>";
+  const from = Deno.env.get("EMAIL_FROM") || "VibeShelf <orders@vibeshelf-ebook-shop.me>";
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
